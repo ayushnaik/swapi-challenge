@@ -66,6 +66,10 @@ Access the API documentation and test the endpoints interactively at `http://loc
 
 The API imposes rate limits to ensure fair usage and prevent abuse. Current rate limit: 200 requests per hour.
 
+## Deployment
+
+The application is deployed on [Render](https://render.com/). Visit the live API [here](https://swapi-challenge.onrender.com).
+
 ## Testing
 
 To run tests, use:
