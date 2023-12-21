@@ -1,0 +1,69 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font:
+    14px "Lucida Grande",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+body .deployments-column {
+  vertical-align: top;
+}
+
+body .deployments-column .column-header {
+  font-weight: 700;
+  text-align: center;
+  font-size: 8em;
+}
+
+body .remove-deployment-col input {
+  margin-bottom: 10px;
+}
+
+body .deployments-column .deployment-display-ele {
+  padding-bottom: 10px;
+}
+
+body .deployments-column .deployment-display-ele button {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+body .deployments-column .deployment-display-ele .edit-view {
+  display: none;
+}
+
+body #spinner {
+  display: none;
+  padding-bottom: 20px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4caf50;
+  color: white;
+}
