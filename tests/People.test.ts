@@ -24,7 +24,6 @@ describe("testing people's module", () => {
         expect(res.status).to.equal(200);
         expect(res.body.data.page).to.be.instanceOf(Array).and.length.greaterThan(0);
         peopleId = res.body.data.page[0]._id;
-        await delay(1000)
     });
 
     it("GET api/people/getPeopleById/:peopleId", async () => {
@@ -34,7 +33,6 @@ describe("testing people's module", () => {
         expect(res.status).to.equal(200);
         expect(res.body.data).to.be.an('object');
         expect(res.body.data).haveOwnProperty('_id' && 'url');
-        await delay(1000)
     });
 
     it("PUT api/people/update/:peopleId", async () => {
@@ -44,7 +42,6 @@ describe("testing people's module", () => {
             .send(peopleData);
 
         expect(res.status).to.equal(200);
-        await delay(1000)
     });
 
     it("DELETE api/people/delete/:peopleId", async () => {
@@ -52,12 +49,5 @@ describe("testing people's module", () => {
             .delete("api/people/delete/" + peopleId)
 
         expect(res.status).to.equal(200);
-        await delay(1000)
     });
 });
-
-function delay(ms: number) {
-    return new Promise(resolve => {
-        setTimeout(resolve, ms);
-    });
-}
