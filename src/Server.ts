@@ -53,7 +53,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(rateLimit({
     windowMs: 60 * 60 * 1000, // 1 hour
-    max: 200, // limit each IP to 100 requests per windowMs
+    max: 200, // limit each IP to 200 requests per windowMs
 }))
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
