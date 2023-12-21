@@ -14,7 +14,7 @@ const options = {
                 name: Package.author,
             },
         },
-        host: process.env.NODE_ENV === 'production' ? 'http://13.233.117.105:4000' : 'http://localhost:4000',
+        host: process.env.NODE_ENV === 'production' ? 'https://swapi-challenge.onrender.com' : 'http://localhost:4000',
         schemes: ["http"],
         basePath: '/api-docs',
         tags: [{
@@ -376,7 +376,7 @@ const options = {
             }
         },
         servers: [process.env.NODE_ENV === 'production' ? {
-            url: 'http://13.233.117.105:4000/api',
+            url: 'https://swapi-challenge.onrender.com/api',
             description: 'Production Server.',
         } : {
             url: 'http://localhost:4000/api',
