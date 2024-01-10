@@ -4,7 +4,7 @@ import fetchDataAndUpdateDB from './ImportSWAPIData';
 
 export function scheduleCronJob() {
     logger.info('Scheduling Cron Job...');
-    cron.schedule('0 0 */5 * * *', async () => {
+    cron.schedule('0 0 */12 * * *', async () => {
         await fetchDataAndUpdateDB();
     });
 }
